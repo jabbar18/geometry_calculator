@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    <h1 class="title">Circle diameter calculator</h1>
+
+    <div class="introduction">
+        <p>
+            Below is a method for calculating circle diameter, enter radius parameter.
+        </p>
+    </div>
+
+    <br>
+
+    {{ include('circle/_form_circle_radius.html.twig') }}
+
+    <br>
+
+    <form action="{{ path('homepage') }}">
+        <input type="submit" value="Homepage">
+    </form>
+
+{% endblock %}

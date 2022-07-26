@@ -1,0 +1,60 @@
+body{background-color: #116ABF;}
+
+h1.title { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+
+a{
+    text-decoration: none;
+}
+
+h2.link{
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*
+ * triangle style
+ */
+div.introduction{
+    text-align: center;
+    font-size: 20px;
+}
+
+p.approach{
+    font-weight: 500;
+    color: darkred;
+}
+
+fieldset.parameter_form
+{
+    margin: auto;
+    width: 300px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+/*
+ * common style
+ */
+input[type=number]{
+    width: 43px;
+}
+
+input[type=submit]{
+    font-size: 15px;
+    font-weight: bold;
+    width: 160px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*
+ * result page
+ */
+div.result{
+    text-align: center;
+    font-size: 40px;
+}

@@ -1,0 +1,12 @@
+<form method="post" action="{{ path('circle-diameter-calculator') }}" >
+    <fieldset class="parameter_form">
+        <legend><h2>Calculate circle diameter</h2></legend>
+        <h3>
+            <br>
+            <label for="radius">Circle radius (cm):</label>
+            <input type="number" name="radius" id="radius" min="1" required>
+            <br>
+            <br>
+            <input type="submit" value="Calculate diameter">
+    </fieldset>
+</form>

@@ -1,0 +1,27 @@
+<form method="post" action="{{ path('heron-formula-area-calculator') }}" >
+    <fieldset class="parameter_form">
+        <legend><h2>Calculate area using Heron's formula (sidelenghts and semiperimeter)</h2></legend>
+        <h3>
+            <p class="approach">
+                Approach:
+                <br>
+                A triangle is valid if sum of its two sides is greater than the third side.
+                <br>
+                1. a + b > c<br>
+                2. a + c > b<br>
+                3. b + c > a
+            </P>
+            <br>
+            <label for="side_a">Side A (cm):</label>
+            <input type="number" name="side_a" id="side_a" min="1" required>
+            <br>
+            <label for="side_b">Side B (cm):</label>
+            <input type="number" name="side_b" id="side_b" min="1" required>
+            <br>
+            <label for="side_c">Side C (cm):</label>
+            <input type="number" name="side_c" id="side_c" min="1" required>
+            <br>
+            <br>
+            <input type="submit" value="Calculate area">
+    </fieldset>
+</form>

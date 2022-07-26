@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    <h1 class="title">Result</h1>
+
+    <div class="result">
+        <p>{{ message }}</p>
+    </div>
+
+    <input type="submit" value="Back" onclick="window.history.back();">
+
+    <form action="{{ path('homepage') }}">
+        <input type="submit" value="Homepage">
+    </form>
+
+{% endblock %}

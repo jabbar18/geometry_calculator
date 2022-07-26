@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    <h1 class="title">Triangle area calculator</h1>
+
+    <div class="introduction">
+        <p>
+            Below are 2 methods for calculating area of triangle.
+            <br>
+            Enter parameters in desired calculator.
+        </p>
+    </div>
+
+    <br>
+
+    {{ include('triangle/_form_base_height.html.twig') }}
+    {{ include('triangle/_form_side_lenghts.html.twig') }}
+
+    <br>
+
+    <form action="{{ path('homepage') }}">
+        <input type="submit" value="Homepage">
+    </form>
+
+{% endblock %}

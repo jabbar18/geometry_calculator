@@ -1,0 +1,15 @@
+<form method="post" action="{{ path('base-height-area-calculator') }}" >
+    <fieldset class="parameter_form">
+        <legend><h2>Calculate area using base and height</h2></legend>
+        <h3>
+            <br>
+            <label for="base">Base of the triangle (cm):</label>
+            <input type="number" name="base" id="base" min="1" required>
+            <br>
+            <label for="height">Height of the triangle (cm):</label>
+            <input type="number" name="height" id="height" min="1" required>
+            <br>
+            <br>
+            <input type="submit" value="Calculate area">
+    </fieldset>
+</form>
